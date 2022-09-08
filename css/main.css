@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  color: rgb(170, 170, 170);
+}
+
+body {
+  background-color: rgb(85, 85, 126);
+}
+
+.food__madrid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 90px;
+}
+
+.white {
+  color: white;
+}
+
+.food__madrid--list {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.food__madrid--list li {
+  margin: 0;
+  padding: 15px 25px;
+  background-color: rgb(61, 62, 82);
+  cursor: pointer;
+}
+.food__madrid--list li:nth-child(1), .food__madrid--list :nth-child(4) {
+  border-right: 1px solid rgb(119, 120, 152);
+}
+.food__madrid--list li:hover:not(:nth-child(3)) {
+  background-color: rgb(58, 53, 69);
+}
+.food__madrid--list .home__list {
+  padding: 0;
+  padding: 25px 35px;
+  background-color: rgb(37, 37, 37);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.food__madrid--box {
+  width: 300px;
+  border-radius: 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+.food__madrid--box--header {
+  height: 155px;
+  background-image: url(/img/food.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 85px 20px 0;
+}
+.food__madrid--box--header span {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 700;
+}
+.food__madrid--box--header span img {
+  margin: 0;
+  margin-right: 3px;
+}
+.food__madrid--box--body {
+  background-color: white;
+}
+.food__madrid--box--body li {
+  padding: 0 20px;
+  height: 60px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 700;
+}
+.food__madrid--box--body li p {
+  margin: 0;
+}
+.food__madrid--box--body li span {
+  margin: 0;
+  transition: 0.5s ease;
+}
+.food__madrid--box--body li:hover .price {
+  color: black;
+  transform: scale(1.2);
+}
+.food__madrid--box--body li:not(:nth-child(4)) {
+  border-bottom: 1px solid rgb(223, 220, 220);
+}/*# sourceMappingURL=main.css.map */

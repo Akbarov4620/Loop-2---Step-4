@@ -1,0 +1,27 @@
+.food__madrid--list{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+
+    li{
+        margin: 0;
+        padding: 15px 25px;
+        background-color: rgb(61, 62, 82);
+        cursor: pointer;
+    }
+
+    li:nth-child(1), :nth-child(4){
+        border-right: 1px solid rgb(119, 120, 152);
+    }
+
+    li:hover:not(:nth-child(3)){
+        background-color: rgb(58, 53, 69);
+    }
+
+    .home__list{
+        padding: 0;
+        padding: 25px 35px;
+        background-color: rgb(37, 37, 37);
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+}
